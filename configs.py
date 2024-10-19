@@ -13,17 +13,17 @@ class Config(object):
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002340808825")
   LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002484381556"))
   BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
-  FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", false))
-  BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", false)
+  FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", False))
+  BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False)
   BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "").split()))
-  OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
+  OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", False))
   ABOUT_BOT_TEXT = f"""
 This is a Permanent FileStore Bot. 
 Send Me any Media or File. I can Work In Channel too. Add Me to Channel with Edit Permission, I will add save Uploaded File in Channel and Share a Shareable Link. 
 
 ╭────[ 🔅FɪʟᴇSᴛᴏʀᴇBᴏᴛ🔅]────⍟
 │
-├🔸 My Name: [FileStore Bot](https://t.me/{BOT_USERNAME})
+├🔸 My Name: [FileStore Bot](https://t.me/{FFMAX_FILE_xBOT})
 │
 ├🔸 Language: [Python 3](https://www.python.org)
 │
